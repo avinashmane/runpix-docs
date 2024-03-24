@@ -6,6 +6,6 @@ Overview
 
 # Contact
 
-* [Back](/)
+* [Back](runpix-docs/)
 
 * [Avinash Mane](https://avinashmane.github.io/)
