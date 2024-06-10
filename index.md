@@ -1,9 +1,10 @@
-# Documentation project
+# Run-Pix project
 
 ## Content
 * [Overview](/runpix-docs/overview)
 
-# Contact
+## Contact
 
 * [Avinash Mane](https://avinashmane.github.io/)
+* https://avinashmane.github.io/runpix-docs/
 
