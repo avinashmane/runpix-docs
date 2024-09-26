@@ -11,7 +11,7 @@ AI based race management system
 
 # Architecture
 
-![Diagram](http://avinashmane.github.io/drawio-github/cloud-image.png)
+![Diagram](cloud-image.png)
 
 ![Diagram](http://jgraph.github.io/drawio-github/diagram.png)
 
