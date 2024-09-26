@@ -7,7 +7,15 @@
 
 ## Reference
 
-#### Firebase Auth for Vite
+
+* runpix  (run-pix.firebaseapp.com) (run-pix.web.app)
+  * functions (https://us-central1-run-pix.cloudfunctions.net/api)
+* run-pix-admin (python) (https://run-pix-admin-nqmxzlpvyq-uc.a.run.app)
+* runpix-face (https://runpix-face-nqmxzlpvyq-uc.a.run.app)
+* docs: https://avinashmane.github.io/runpix-docs/
+* Storage: (https://storage.googleapis.com/run-pix.appspot.com/)
+
+### Firebase Auth for Vite
 
 run-pix.web.app
 

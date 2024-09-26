@@ -1,3 +1,7 @@
+# Run-Pix project
+
+<img src="images/logo.png" alt="Run-Pix" width="100"/> <span style="font-size: '2 rem';"> Run-PiX <small> AI based race management from your mobile</small></span>
+
 # Races
 
 ## Content
