@@ -2,6 +2,8 @@
 
 ## Content
 * [Overview](/runpix-docs/overview)
+* [Races](/runpix-docs/races)
+
 
 ## Contact
 
