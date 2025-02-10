@@ -127,6 +127,15 @@ photos: Event, WPT
 * upload with exif date
 * selfie upload
 
+# Race Modes
+* Timed Races - In-person Races
+    * Bib recorded manually
+    * bib recorded from uploaded pictures
+    * Bib recorded from uploaded videos
+        * timing taken from timestamp (for videos this is starting timestamp)
+            Chromes does not provide file timestamp, hence 
+        * timing taken from filename (if timestamp is prior...as not all browsers show correct timestamp)
+* Live Races - virtual races 
 # Live races
 
 ## registration

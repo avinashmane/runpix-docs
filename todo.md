@@ -5,45 +5,35 @@
 # TODO : Design
 
 ## use case
-* find timing from images
+
 * for images for a bib
 
 # problems
 
 
+* _check NaN:NaN:NanN for Race Timing from save_result()_ 
 * Deploy Error: Could not load the default credentials. Browse to https://cloud.google.com/docs/authentication/getting-started for more information.
 pnpm add @google-cloud/functions-framework
 
 # Todo:
 
-* check NaN:NaN:NanN for Race Timing from save_result()
-* result publishing
-
-arrayOfMins=_.chain(allEntries.value).filter(checkStatus).filter(checkBib).groupBy("bib").map((x,k)=>_.minBy(x,"timestamp")).value() 
-
-keys_=_.words("bib name timestamp status waypoint gender ")
-res=_.chain(allEntries.value).filter(checkBib).groupBy("bib").map((x,k)=>_.chain(x).minBy("timestamp").pick(keys_).value()).orderBy("timestamp").groupBy(x=>x.status+"-"+x.waypoint+'-'+x.gender).value()
-
-* video capture
+* show images/show videos
+* web based video backlog
 * user permissions
-* timestamp update
 * startlist screen
 * photoStatus==available UI 
-* timestamp from server
 * Logic to add timing entry: need lot of work
-* watch the queue traffic
 * search for all images (in case of seach image has all face. current solution any faces)
+* lodash tree shaking (gone bad since _.chain does not work)
+import {chain,cloneDeep,map,take,keys,orderBy,sumBy,pickBy,split,sortBy,tap,startsWith} as _ from 'lodash-es'  problematic
+* watch the queue traffic
+* timestamp update
+
 
 
 ### current 
 
-
-* toast DONE
-* Certification link from result (WIP) DONE
-* router replace for event DONE
-
-* lodash tree shaking (gone bad since _.chain does not work)
-import {chain,cloneDeep,map,take,keys,orderBy,sumBy,pickBy,split,sortBy,tap,startsWith} as _ from 'lodash-es'  problematic
+* raceLog to use svgtextcircle
 
 * rename API as /image as /api/facematch
 
@@ -52,10 +42,38 @@ import {chain,cloneDeep,map,take,keys,orderBy,sumBy,pickBy,split,sortBy,tap,star
 * backend changes
     * change image waypoint
 * Start list
-* SVG logos
-    * event logos
+
 
 ### features
+* 10feb "1.2.1"
+
+    * video ingestion
+        * rate limiting thru backoff
+    * Vuex to Pinia
+    * race form revised
+    * result card update with Svg Text
+    * timestamp error in Result start/finish
+    * provisional timing: Summary stats
+    * SVG logos
+        * event logos
+    * removal of SVGtext and SvgTextCircle
+        * made workable on chrome as well
+    * Upload reworked
+
+* pre Jan 2025
+    * face search
+    * toast DONE
+    * Certification link from result (WIP) DONE
+    * router replace for event DONE
+    * result publishing
+
+    arrayOfMins=_.chain(allEntries.value).filter(checkStatus).filter(checkBib).groupBy("bib").map((x,k)=>_.minBy(x,"timestamp")).value() 
+
+    keys_=_.words("bib name timestamp status waypoint gender ")
+    res=_.chain(allEntries.value).filter(checkBib).groupBy("bib").map((x,k)=>_.chain(x).minBy("timestamp").pick(keys_).value()).orderBy("timestamp").groupBy(x=>x.status+"-"+x.waypoint+'-'+x.gender).value()
+
+    * video capture
+
 
 * **23sep**
 
