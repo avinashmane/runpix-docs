@@ -10,13 +10,14 @@
 
 # problems
 
-
 * _check NaN:NaN:NanN for Race Timing from save_result()_ 
+
 * Deploy Error: Could not load the default credentials. Browse to https://cloud.google.com/docs/authentication/getting-started for more information.
 pnpm add @google-cloud/functions-framework
 
 # Todo:
 
+* Certificate enabling
 * show images/show videos
 * web based video backlog
 * user permissions
@@ -33,6 +34,10 @@ import {chain,cloneDeep,map,take,keys,orderBy,sumBy,pickBy,split,sortBy,tap,star
 
 ### current 
 
+* check access
+* mark indicator of the role
+* default picture
+
 * raceLog to use svgtextcircle
 
 * rename API as /image as /api/facematch
@@ -45,6 +50,17 @@ import {chain,cloneDeep,map,take,keys,orderBy,sumBy,pickBy,split,sortBy,tap,star
 
 
 ### features
+* 1.2.3 20Jun26
+    * logo dark theme rounding 
+    * recent races 
+    * profilecard: dark fix
+
+
+* 1.2.2
+
+    * result start/finish time format mismatch
+    * dark theme correction on resultspage
+
 * 10feb "1.2.1"
 
     * video ingestion
@@ -153,6 +169,7 @@ import {chain,cloneDeep,map,take,keys,orderBy,sumBy,pickBy,split,sortBy,tap,star
 
 ### bugs
 ### roadmap
+
 * highlight pictures for the race
 * IMG: watermark
 * SS: INSTA share
